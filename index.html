@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="index.css">
+    <title>i-link test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="headerLeft">
+        <div class="logo">
+            <img src="assets/Vector.svg" alt="">
+            <img src="assets/Vector%20(1).svg" alt="">
+        </div>
+
+    </div>
+
+    </div>
+    <div class="headerRight">
+        <a href="#content">Jane Doe</a>
+        <a href="#log">Tell us about yourself</a>
+        <a href="#slider">Slider</a>
+    </div>
+</header>
+
+<div class="content">
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <div class="person">
+        <img src="assets/Rectangle%201.png" alt="">
+        <div class="description">
+            <h1><a name="content"></a>Jane Doe</h1>
+            <div class="info">
+                <div class="data">
+                    <p class="title">Date of birth</p>
+                    <p>21.04.2001</p>
+                </div>
+                <div class="data">
+                    <p class="title">Gender</p>
+                    <p>Female</p>
+                </div>
+                <div class="data">
+                    <p class="title">Country</p>
+                    <p>Corea</p>
+                </div>
+
+            </div>
+            <h3>About me</h3>
+            <p class="about">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="log">
+    <h2><a name="log"></a>Tell us about yourself</h2>
+    <div class="square3"></div>
+    <div class="square4"></div>
+    <div class="square5"></div>
+    <div class="square6"></div>
+    <div class="square7"></div>
+    <div class="square8"></div>
+    <form action="">
+    <label>
+        <p class="name">Your name</p>
+        <input type="text" class="iname" placeholder="Tell us your name" pattern="^[a-zA-Z]+$">
+    </label>
+    <label>
+        <p class="gender">Your gender</p>
+        <input class="igender" placeholder="Chose your gender" list="gender" pattern="^[a-zA-Z]+$">
+        <datalist id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </datalist>
+        </input>
+    </label>
+    <label>
+        <p class="country">Your country</p>
+        <input type="text" class="icountry" placeholder="Where are you from?" pattern="^[a-zA-Z]+$">
+    </label>
+    <label>
+        <p class="city">Your City</p>
+        <input type="text" class="icity" placeholder="Your native city" pattern="^[a-zA-Z]+$">
+    </label>
+    <label>
+        <p class="birth">Your date of birth</p>
+        <input type="text" class="ibirth" placeholder="dd.mm.yyyy" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}">
+    </label>
+    <div class="file">
+        <p>Proof your identity with some documents</p>
+        <label for="myfile" class="chose">
+            <p>Add document</p>
+        </label>
+        <input type="file" class="my" id="myfile" name="myfile" multiple="multiple" />
+    </div>
+    <button disabled>Send info</button>
+        <div class="checkComplete">
+            <img class="completed" src="assets/Ellipse%205.svg" alt="">
+            <img class="check" src="assets/Vector%20(2).svg" alt="">
+            <p class="complete">Completed</p>
+        </div>
+    </form>
+</div>
+
+<footer>
+    <div class="container">
+        <h3>Slide this photo</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+        <a name="slider"></a>
+        <div class="carousel">
+            <input type="radio" id="carousel-1" name="carousel[]" checked>
+            <input type="radio" id="carousel-2" name="carousel[]">
+            <input type="radio" id="carousel-3" name="carousel[]">
+            <ul class="carousel__items">
+                <li class="carousel__item"><img src="assets/Rectangle%2010.png" alt=""></li>
+                <li class="carousel__item"><img src="assets/Rectangle%2011.png" alt=""></li>
+                <li class="carousel__item"><img src="assets/Rectangle%2012.png" alt=""></li>
+            </ul>
+            <div class="carousel__prev">
+                <label for="carousel-1"></label>
+                <label for="carousel-2"></label>
+                <label for="carousel-3"></label>
+            </div>
+            <div class="carousel__next">
+                <label for="carousel-1"></label>
+                <label for="carousel-2"></label>
+                <label for="carousel-3"></label>
+            </div>
+            <div class="carousel__nav">
+                <label for="carousel-1"></label>
+                <label for="carousel-2"></label>
+                <label for="carousel-3"></label>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
